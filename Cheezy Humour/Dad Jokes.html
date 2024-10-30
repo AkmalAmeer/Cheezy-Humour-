@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Jokes Hub</title>
+    <link rel="stylesheet" href="Dad Jokes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>😂 Dad Jokes Hub 😂</h1>
+        <nav>
+            <button onclick="getJoke()">Get a New Joke</button>
+            <button onclick="toggleFavorites()">Favorites</button>
+        </nav>
+    </header>
+    <main>
+        <div class="joke-card" id="jokeCard">
+            <p id="jokeText">Click the "Get a New Joke" button for a joke!</p>
+            <button onclick="revealPunchline()" id="punchlineButton">Reveal Punchline</button>
+            <button onclick="addFavorite()" id="favoriteButton">Add to Favorites</button>
+        </div>
+        <div class="favorites-list" id="favoritesList" style="display: none;">
+            <h2>Your Favorite Jokes</h2>
+            <ul id="favorites"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>Follow us for more laughs!</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/akmalameer/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="Dad Jokes.js"></script>
+</body>
+
+</html>
